@@ -1,0 +1,66 @@
+.add-bot-container {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.add-bot-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.add-bot-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.add-bot-subtitle {
+    color: var(--text-muted);
+}
+
+.add-bot-instructions {
+    margin-bottom: var(--space-lg);
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.add-bot-instructions h3 {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--space-md);
+}
+
+.add-bot-instructions ol {
+    margin-left: var(--space-lg);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+.add-bot-instructions li {
+    margin-bottom: var(--space-sm);
+}
+
+.add-bot-instructions code {
+    background: var(--bg-elevated);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+}
+
+.add-bot-form {
+    padding: var(--space-xl);
+}
+
+.form-hint {
+    margin-top: var(--space-xs);
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+.add-bot-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-md);
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--border-color);
+}
