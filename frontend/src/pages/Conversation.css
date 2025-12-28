@@ -1,0 +1,143 @@
+.conversation-page {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 64px);
+    background: var(--bg-primary);
+}
+
+.conversation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.conversation-info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.conversation-avatar-lg {
+    width: 44px;
+    height: 44px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    color: white;
+}
+
+.conversation-info .conversation-name {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin: 0;
+}
+
+.conversation-info .conversation-username {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+}
+
+.conversation-controls {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+/* Messages */
+.messages-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: var(--space-lg);
+}
+
+.messages-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.no-messages {
+    text-align: center;
+    color: var(--text-muted);
+    padding: var(--space-2xl);
+}
+
+.message {
+    max-width: 70%;
+    animation: fadeIn var(--transition-fast) ease-out;
+}
+
+.message-user {
+    align-self: flex-start;
+}
+
+.message-response {
+    align-self: flex-end;
+}
+
+.message-content {
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-lg);
+    line-height: 1.5;
+}
+
+.message-user .message-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-bottom-left-radius: var(--radius-sm);
+}
+
+.message-response .message-content {
+    background: var(--accent);
+    color: white;
+    border-bottom-right-radius: var(--radius-sm);
+}
+
+.message-meta {
+    display: flex;
+    gap: var(--space-sm);
+    margin-top: var(--space-xs);
+    padding: 0 var(--space-sm);
+    font-size: var(--font-size-xs);
+    color: var(--text-muted);
+}
+
+.message-response .message-meta {
+    justify-content: flex-end;
+}
+
+/* Input */
+.message-input-container {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.message-input {
+    flex: 1;
+}
+
+.message-input-container .btn {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .message {
+        max-width: 85%;
+    }
+
+    .conversation-controls .badge {
+        display: none;
+    }
+}
